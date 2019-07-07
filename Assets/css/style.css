@@ -2,7 +2,55 @@
 
 /*----------------------------------Colours */
 
-/*----------------------------------Menu Bar */
+/*----------------------------------Nav Bar */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  nargin: 0;
+  padding-left: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #4e9196;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #fafafa;
+  background-color: #4e9196;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 0px;
+  border: 0;
+} 
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 
 /*----------------------------------special/paddings/margins/text */
 
@@ -10,12 +58,47 @@
 
 /*----------------------------------Body */
 
+body {
+  font-family: "Exo", sans-serif;
+  transition: background-color .5s;
+}
+
+.callout-container {
+  height: 100vh;
+  background: url("../images/maxresdefault.jpg") no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jumbotron {
+  background-color: transparent;
+}
+
+.jumbotron-header {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.jumbotron small {
+  Color: #d0d0d0;
+  font-size: 60%;
+  font-style: italic;
+}
+
 
 /*----------------------------------Footer */
+
 footer {
-    position: fixed;
-    height: 100px;
-    bottom: 0;
-    width: 100%;
-    padding: 20px 5px 30px;
+  position: fixed;
+  height: 100px;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
 }
+
